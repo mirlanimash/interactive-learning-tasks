@@ -1,5 +1,5 @@
 output "region" {
-  value = "us-east-1"
+  value = "us-east-2"
 }
 output "keyname" {
   value = aws_key_pair.ilearning-wordpress.key_name
