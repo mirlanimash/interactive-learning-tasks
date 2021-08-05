@@ -5,11 +5,6 @@ resource "aws_iam_group_membership" "membership" {
   ]
 
   group = aws_iam_group.sysusers.name
-
-}
-
-resource "aws_iam_group" "sysusers" {
-  name = "sysusers"
 }
 
 resource "aws_iam_user" "bob" {
@@ -18,3 +13,9 @@ resource "aws_iam_user" "bob" {
     Team = "DevOps"
   }
 }
+
+resource "aws_iam_group" "sysusers" {
+  name = "sysusers"
+}
+
+
